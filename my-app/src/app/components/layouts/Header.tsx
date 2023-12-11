@@ -10,6 +10,12 @@ const Pages: { name: string }[] = [
     {
         name: 'Documentation'
     },
+    {
+        name: 'About'
+    },
+    {
+        name: 'Contact'
+    },
 ]
 
 export default function Header() {
@@ -22,7 +28,7 @@ export default function Header() {
                 </div>
                 {/* NAVBAR */}
                 <div>
-                    <ul className="space-x-4 hidden sm:flex font-semibold">
+                    <ul className="space-x-4 hidden sm:flex">
                         {
                             Pages.map((items) => {
                                 return (
