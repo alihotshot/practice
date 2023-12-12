@@ -13,7 +13,7 @@ export default function Header() {
                 </div>
                 {/* NAVBAR */}
                 <div>
-                    <ul className="space-x-4 hidden sm:flex">
+                    <ul className="space-x-4 hidden sm:flex font-medium">
                         <Link href={"/"}> <li>Home</li> </Link>
                         <Link href={"/"}> <li>Documentation</li> </Link>
                         <Link href={"/"}> <li>About</li> </Link>
