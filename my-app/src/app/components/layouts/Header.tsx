@@ -6,7 +6,7 @@ import Wrapper from "@/app/components/shared/Wrapper"
 export default function Header() {
     return (
         <Wrapper>
-            <header className="bg-gray-200 h-16 p-4 sm:flex justify-between items-center">
+            <header className="bg-gray-200 h-16 p-6 sm:flex justify-between items-center">
                 {/* LOGO */}
                 <div className="flex justify-center items-center">
                     <Image src={Logo} alt={"NextJS"} width={120} height={120}></Image>
