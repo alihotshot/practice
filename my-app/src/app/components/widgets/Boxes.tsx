@@ -19,26 +19,28 @@ const coreBoxes: { header: string, description: string, number: number }[] = [
 
 const Boxes = () => {
     return (
-        <div className="flex max-w-screen-xl mx-auto py-6 space-x-4">
-            {
-                coreBoxes.map((item, i) => {
-                    return (
-                        <div className="border rounded-lg w-4/12 px-8 py-12 relative">
-                            <h4 className=" font-semibold text-lg">{item.header}</h4>
-                            <p className=" text-slate-600 mt-2">{item.description}</p>
-                            <span className="text-9xl right-10 font-bold opacity-10 absolute top-4">{i + 1}</span>
-                        </div>
-                    )
-                })
-            }
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+        <div className="max-w-screen-xl mx-auto py-6">
+            <div className="flex flex-col gap-x-4 gap-y-4 md:flex-row">
+                {
+                    coreBoxes.map((item, i) => {
+                        return (
+                            <div className="flex-1 border rounded-lg px-8 py-12 relative">
+                                <h4 className=" font-semibold text-lg">{item.header}</h4>
+                                <p className=" text-slate-600 mt-2">{item.description}</p>
+                                <span className="text-9xl right-10 font-bold opacity-10 absolute top-4">{i + 1}</span>
+                            </div>
+                        )
+                    })
+                }
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </div>
         </div>
 
     )
