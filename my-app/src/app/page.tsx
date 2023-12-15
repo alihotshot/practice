@@ -1,5 +1,6 @@
 import Hero from './components/widgets/Hero'
 import CoreTracks from './components/widgets/CoreTracks'
+import Api from './components/widgets/Api'
 
 export default function Home() {
   return (
@@ -9,6 +10,8 @@ export default function Home() {
 
       {/* Core Track Section */}
       <CoreTracks />
+
+      <Api />
 
     </main>
   )
