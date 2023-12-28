@@ -12,7 +12,7 @@ const Footer = () => {
                         <Image src={Logo} alt={"Footer Logo"} width={120} height={120}></Image>
                     </div>
 
-                    {/* Footer Pages */}
+                    {/* All Pages */}
                     <ul className="flex space-x-6 justify-center text-lg mt-10 text-white">
                         <li>Home</li>
                         <li>About</li>
