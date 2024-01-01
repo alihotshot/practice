@@ -6,12 +6,12 @@ export const blogs = {
     fields: [
         {
             name: "title",
-            title: "Blog Title",
+            title: "Title",
             type: "string"
         },
         {
-            name: "title",
-            title: "Blog Title",
+            name: "body",
+            title: "Body",
             type: "string"
         }, 
     ]
