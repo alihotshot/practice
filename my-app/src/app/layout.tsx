@@ -19,11 +19,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='font-Jost {inter.className}'>
+        {/* Offer Banner */}
         <div className=' bg-black text-white text-center h-10 text-xl flex justify-center items-center'>
           <p>Black Friday Offers from as little as $10.36/m</p>
         </div>
+        {/* Header  */}
         <Header />
+        {/* Body */}
         {children}
+        {/* Footer  */}
         <Footer />
       </body>
     </html>
