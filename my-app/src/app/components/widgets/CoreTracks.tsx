@@ -18,6 +18,8 @@ const CoreTracks = () => {
             </div>
             {/* Boxes */}
             <Boxes />
+
+
         </section>
     )
 }
