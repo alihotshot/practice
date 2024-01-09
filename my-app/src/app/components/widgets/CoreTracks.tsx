@@ -19,7 +19,6 @@ const CoreTracks = () => {
             {/* Boxes */}
             <Boxes />
 
-
         </section>
     )
 }
