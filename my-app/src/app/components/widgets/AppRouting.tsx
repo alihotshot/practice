@@ -1,14 +1,20 @@
 // // Dynamic Routing : We also call it "App Routing" 
 'use client'
 import axios from "axios"
-import { useState } from "react"
+import Link from "next/link"
+import { useEffect, useState } from "react"
 
 const AppRouting = () => {
     const [users, setusers] = useState([])
     const getUsers = async () => {
         const { data } = await axios.get("https://jsonplaceholder.typicode.com/users")
         setusers(data)
+        console.log(data)
     }
+    //used for getting data without clicking on Get Data
+    useEffect(() => {
+        getUsers()
+    }, [])
 
     return (
         <div className="flex space-x-4 mb-5 items-center justify-center">
@@ -21,13 +27,13 @@ const AppRouting = () => {
                     {
                         users.map((e) => {
                             return (
-                                <li>{e.username}</li>
+                                <li>{e.username} ---- <Link href={`/${e.id}`}>Link</Link></li>
                             )
                         })
                     }
                 </ul>
             </div>
-        </div>
+        </div >
     )
 }
 
